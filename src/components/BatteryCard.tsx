@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Battery, BatteryMedium, Lightning } from 'lucide-react';
+import { Battery, BatteryMedium, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import AnimatedValue from './AnimatedValue';
 
@@ -84,7 +84,7 @@ export const BatteryCard = ({
         <div className="flex justify-between items-center">
           <span className="text-sm text-ev-gray-dark">Fast Charging</span>
           <div className="flex items-center">
-            <Lightning className="h-4 w-4 text-ev-blue mr-1" />
+            <Zap className="h-4 w-4 text-ev-blue mr-1" />
             <span className="font-medium">
               <AnimatedValue value={chargingTime} suffix=" min" decimals={0} />
             </span>
